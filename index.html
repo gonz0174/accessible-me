@@ -19,26 +19,29 @@
       <li><a href="#nav">Skip to main nav</a></li>
       <li><a href="#main">Skip to main content</a></li>
     </ul>
-    <!-- The correct tag is header. It is not necessary to add a div in this case. Finally, the ARIA role is set to the header and navigation tag, I know is redundant, but it is to complete the instructions of the assignment. -->
+    <!-- The correct tag is header. It is not necessary to add a div in this case. -->
     <!-- <div class="site-header"> -->
-    <header role="banner">
-      <h1 role="heading">Jam Box Studios</h1>
+    <header>
+      <h1>Jam Box Studios</h1>
       <!-- Adding an id to the nav, so that the respective skip link goes directly to this content. -->
-      <div class="main-nav" id="nav" role="navigation">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
-        </ul>
+      <nav>
+        <div class="main-nav" id="nav" role="navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Studio</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="banner" role="banner">
+        <!-- <img src="https://placekitten.com/1200/900" alt="Kitten in the snow" class="banner"> -->
+        <img src="https://placekitten.com/1200/900" alt="Kitten in the snow">
       </div>
-      <!-- <img src="https://placekitten.com/1200/900" alt="Kitten in the snow" class="banner"> -->
-      <img src="https://placekitten.com/1200/900" alt="Kitten in the snow">
     </header>
     <!-- </div> -->
-    <!-- ARIA role is set to the main tag, I know is redundant, but it is to complete the instructions of the assignment. -->
     <!-- <div class="main-content"> -->
-    <main id="main" role="main">
+    <main id="main">
       <!-- There's only one h1 that is the title. In this case, the right tag is h2. -->
       <!-- <h1>Welcome to Jam Box</h1> -->
       <h2>Welcome to Jam Box</h2>
@@ -95,7 +98,7 @@
     </main>
     <!-- </div> -->
     <!-- ARIA role is set to the footer tag, I know is redundant, but it is to complete the instructions of the assignment. -->
-    <footer role="contentinfo">
+    <footer>
       <div class="site-footer">
         &copy; 2021 Jam Box Studios
       </div>
